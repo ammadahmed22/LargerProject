@@ -3,7 +3,7 @@ default_platform :ios
 platform :ios do
   before_all do
     setup_circle_ci
-    scan(include_simulator_logs: false)
+    
 
   end
 
@@ -16,5 +16,6 @@ platform :ios do
   lane :adhoc do
     match(type: "adhoc")
     gym(export_method: "ad-hoc")
+     scan(include_simulator_logs: false)
   end
 end
