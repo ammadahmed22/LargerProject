@@ -16,6 +16,6 @@ platform :ios do
   lane :adhoc do
     match(type: "adhoc")
     gym(export_method: "ad-hoc")
-     scan(include_simulator_logs: false)
+     
   end
 end
